@@ -39,6 +39,8 @@ main {
 .navbar img {
     width: 200px;
     height: auto;
+    animation-name: slideRight;
+    animation-duration: 3s;
 } 
 
 .nav-link{
@@ -46,7 +48,14 @@ main {
     color: #F9FAF8; 
     font-size: 20px;
     font-weight: bold;
-    margin-right: 20px;
+    margin-right: 20px; 
+} 
+
+.nav-link:hover{
+    animation-name: glow;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
 
 .intro-section{
@@ -69,9 +78,12 @@ main {
 
 
 .intro-image{
-    width: 450px;
-    height: auto;
-    border-radius: 10px;
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px; 
+    animation-name: slideUp; 
+    animation-duration: 2s; 
 } 
 
 .button-rick{
@@ -98,9 +110,86 @@ main {
     text-align: center;
 }
 
+.watch-grid{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+} 
+
+.watch-card{
+    width: 250px;
+    height: 450px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} 
+
+.watch-box {
+    width: 220px; /* Set a consistent width for each watch box */
+    height: 400px; /* Set a consistent height for each watch box */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.watch-size {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills the box without distortion */
+}
 
 
+.watch-text{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
 
+
+/* Quote Section*/ 
+
+.quote-section{
+    text-align: center;
+    background-color: hsl(234, 44%, 66%);
+    color: #F9FAF8; 
+    margin-top: 20px;
+    padding: 30px;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 1.5;
+} 
+
+.quote-section h5{
+    margin-top: 10px;
+} 
+
+/* Follow along section */ 
+
+.follow-section{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 40px;
+} 
+
+.follow-box{
+    background-color: hsl(310, 75%, 86%);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 80%;
+    max-width: 600px; 
+    
+}
+
+
+/* Footer section */
 
 footer{
     background-color: hsl(234, 44%, 66%);
@@ -108,4 +197,17 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+} 
+
+/* Animation Section */
+@keyframes slideRight{
+    from{transform: translateX(150%)}
+} 
+
+@keyframes slideUp{
+    from{transform: translateY(150%)}
+}  
+
+@keyframes glow{
+    50%{box-shadow: 0px 0px 50px hsl(60, 100%, 80%);}
 }

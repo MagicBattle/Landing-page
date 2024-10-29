@@ -3,62 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Landing-Page Test</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    
-    <navbar>
-        <div class="navlogo">
-        <img src="images/gs.png" id="gslogo">
+<body> 
+    <!-- Header Section-->
+    <header> 
+        <!-- Navbar + Header logo section-->
+        <div class="navbar">
+            <img src="images/gs.png" alt="Picture of grand seiko logo">
+            <nav>
+                <a href="" class="nav-link">SBGA 413</a>
+                <a href="" class="nav-link">SBGH267</a>
+                <a href="" class="nav-link">SBGM235</a>
+            </nav>
         </div>
-            <div class="link">
-            <a href="" class="links">SBGA413</a>
-            <a href="" class="links"">SBGH267</a>
-            <a href="" class="links">SBGM235</a>   
-            </div>     
-    </navbar>
 
-    <div class="info">
-        <div class="info2">
-        <h1>This is my grand seiko wishlist</h1>
-        <p>The website is a quick introduction to some of the watches I hope to have when I finally save up a good amount of money and I'm in a good place.</p>
-        <div class="signup1">Sign up</div>
+        <!-- Introduction Section-->
+        <div class="intro-section">
+            <div class="intro-text">
+                <h1>Wishlist of my dream watches</h1>
+                <p>A collection of dream watches that represent my love for precision and craftsmanship. I hope to own these beauties one day</p>
+                <a href="https://youtu.be/dQw4w9WgXcQ?t=42" alt="My Favorite Song" target="_blank"><button class="button-rick">Sign up!</button></a>
+            </div>
+            <img src="images/gsblue.jpg" class="intro-image" alt="An image of a Grand Seiko blue whirlpool dial">
         </div> 
-        <div class="dreams"><img src=""></div>
+    </header> 
+    <!-- Main Section-->
+    <main>
+        <!-- Watch Image + Text Section-->
+        <section class="watch-gallery">
+            <h1>My Wishlist watches</h1>
+            <div class="watch-grid">
+                <div class="watch-card">
+                    <img src="images/413.jpg" class="watch-size" alt="Picture of a Grand Seiko Shunbun">
+                    <p class="watch-text">This is an image of the iconic Grand Seiko Shunbun. One of the most popular out of all the Grand Seikos.</p>
+                </div> 
 
-    </div> 
+                <div class="watch-card">
+                    <img src="images/gmt.jpg" class="watch-size" alt="Picture of a Grand Seiko Whirlpool GMT">
+                    <p class="watch-text">This is an image of a Grand Seiko with a unique whirlpool dial. In addition of the whirlpool dial, it also has a GMT function.</p>
+                </div> 
 
+                <div class="watch-card">
+                    <img src="images/red.jpg" class="watch-size" alt="Picture of a limited edition Grand Seiko with a red dial">
+                    <p class="watch-text">This is a image of a newer limited edition Grand Seiko, but with a unique red dial.</p>
+                </div>
 
-    <div class="watchimg">
-        <div></div>
-    </div> 
+                <div class="watch-card">
+                    <img src="images/purple.jpg" class="watch-size" alt="Picture of a imited edition Grand Seiko with a purple dial">
+                    <p class="watch-text">This is an image of a 200 piece limited edition Grand Seiko. It was part of a collaboration with Grand Seiko and Watches of Switzerland.</p>
+                </div>
+            </div>
 
+        </section>
+        <!-- Quote Section -->
+        <section class="quote-section">
+            <p>"Bringing together mechanical and electronic watchmaking for the best of both worlds."</p>
+            <h5>- Grand Seiko</h5>
+        </section> 
 
-    <div class="quotesec">
-        <div></div>
+        <!-- Follow along section-->
+        <section class="follow-section">
+            <div class="follow-box">
+                <div class="follow-text">
+                    <h4>Travel with me</h4>
+                    <p>Follow me as I work as hard as possible to maybe one day own a watch of this caliber.</p>
+                    <button class="button-rick">Travel Along</button>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    </div> 
-
-    <div class="wishlist">
-
-    </div>
-    
-
-
-   
-   
-    
-
-  
-
-
-
-    <footer class="HF">
-        <p>Copyright &copy; The Odin Project 2024</p>
-
+    <!-- Footer Section-->
+    <footer>
+        <p>&copy; The Odin Project 2024</p>
     </footer>
-
-
+    
 </body>
 </html>
